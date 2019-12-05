@@ -7,6 +7,19 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="372*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="tbxText" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Bonjour ceci est un exemple" VerticalAlignment="Top" Width="441" Margin="185,34,0,0" Grid.RowSpan="2"/>
+        <TextBox x:Name="tbxResult" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="441" Margin="185,28,0,0" IsEnabled="False" Grid.Row="1"/>
+        <TextBox x:Name="tbxMessage" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="441" Margin="185,70,0,0" Grid.Row="1"/>
+        <Label x:Name="label" Content="Message to encode" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,34,0,0" Grid.RowSpan="2" Height="26" Width="113"/>
+        <Label x:Name="label_Copy" Content="Result of encode" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="24,0,0,321" Grid.Row="1" Height="26" Width="98"/>
+        <Label x:Name="label_Copy1" Content="Message to decode" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,67,0,0" Grid.Row="1" Height="26" Width="114"/>
+        <Button x:Name="btnEnCode" Content="EnCode" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="657,34,0,0" Grid.RowSpan="2" Height="20" Click="BtnEnCode_Click"/>
+        <Button x:Name="btnUnCode" Content="UnCode" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="657,78,0,0" Grid.Row="1" Height="20"/>
+        <TextBox x:Name="tbxArrayResult" HorizontalAlignment="Left" Height="227" TextWrapping="Wrap" VerticalAlignment="Top" Width="772" Margin="10,135,0,0" Grid.Row="1"/>
+
     </Grid>
 </Window>
